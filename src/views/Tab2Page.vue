@@ -13,7 +13,7 @@
       </ion-header>
 
      
-      <ExploreContainer name="Tab 2 page hahaha" />
+      <ExploreContainer name="Tab 2 page hahahdcbfvjhbsv bsa" />
     </ion-content>
   </ion-page>
 </template>
