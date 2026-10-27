@@ -12,6 +12,8 @@
         </ion-toolbar>
       </ion-header>
 
+      hello
+
       <ExploreContainer name="Tab 2 page" />
     </ion-content>
   </ion-page>
