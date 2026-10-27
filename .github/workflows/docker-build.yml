@@ -17,10 +17,21 @@ jobs:
       - name: Checkout latest code
         uses: actions/checkout@v4
 
-      - name: Rebuild and restart Docker application
+      - name: Deploy to the existing Docker Compose project
         shell: powershell
-        run: docker compose up -d --build
+        run: |
+          $projectPath = "C:\Users\balle\OneDrive\Documents\mycrud"
 
-      - name: Check Docker containers
+          Set-Location $projectPath
+
+          git pull origin main
+
+          docker compose up -d --build
+
+      - name: Verify deployment
         shell: powershell
-        run: docker compose ps
+        run: |
+          Set-Location "C:\Users\balle\OneDrive\Documents\mycrud"
+
+          docker compose ps
+          docker image ls
