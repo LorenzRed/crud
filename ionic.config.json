@@ -1,0 +1,7 @@
+{
+  "name": "mycrud",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
