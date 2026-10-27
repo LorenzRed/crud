@@ -1,0 +1,9 @@
+services:
+  mycrud:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mycrud-container
+    ports:
+      - "8080:80"
+    restart: unless-stopped
